@@ -30,7 +30,7 @@ HELP = """
 ▷/playlist: Shows the playlist.
 
 **Admin Commands:**
-▷/skip **[n]** ...  Skip current or n where n >= 2
+▷/skip: Skip current or n where n >= 2
 ▷cplay: Play music from a channel's music files.
 ▷/yplay: Play music from a youtube playlist.
 ▷/join: Join voice chat.
@@ -59,11 +59,7 @@ HELP = """
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton("🔥 Source Code 🔥", url='https://github.com/ZauteKm/Radio-Music-Bot'),
-    ],
-    [
-        InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
-        InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6'),
+        InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ ✨", url='https://t.me/DarkPentester'),
     ],
     [
         InlineKeyboardButton('🆘 Help & Commands 🆘', callback_data='help'),
@@ -80,15 +76,7 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-            InlineKeyboardButton("🔥 Source Code 🔥", url='https://github.com/ZauteKm/Radio-Music-Bot'),
-        ],
-        [
-            InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
-            InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6'),
-        ],
-        [
-            InlineKeyboardButton('🔰 How to Deploy 🔰', url='https://t.me/c/1481808444/131'),
-        
+            InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ ✨", url='https://t.me/DarkPentester'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
