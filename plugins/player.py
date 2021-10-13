@@ -214,7 +214,7 @@ async def yplay(_, message: Message):
         try:
             thumb = info["thumbnail"]
         except:
-            thumb="https://telegra.ph/file/d925c78d84dc4aff53b45.jpg"
+            thumb="https://telegra.ph/file/f12cca6da80aa19031661.jpg"
             pass
         if int(duration) > DURATION_LIMIT:
             k=await message.reply_text(f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed, the provided video is {duration} minute(s)")
@@ -423,7 +423,7 @@ async def deezer(_, message):
             try:
                 thumb=a.get("image")
             except:
-                thumb="https://telegra.ph/file/d925c78d84dc4aff53b45.jpg"
+                thumb="https://telegra.ph/file/f12cca6da80aa19031661.jpg"
                 pass
             GET_THUMB[url] = thumb
         except:
@@ -1017,7 +1017,7 @@ async def yt_play_list(client, m: Message):
                 markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📢 Join My Update Channel", url='https://t.me/tgbotsproject')
+                            InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ ✨", url='https://t.me/DarkPentester')
                         ],
                         [
                             InlineKeyboardButton("🔄 Try Again", url=f"https://telegram.me/GetAPlayListBot?start=zautekm_{m.from_user.id}")
@@ -1252,7 +1252,7 @@ async def upload(client, message):
         file=GET_FILE[url]
         thumb=GET_THUMB.get(url)
         if thumb is None:
-            thumb="https://telegra.ph/file/d925c78d84dc4aff53b45.jpg"
+            thumb="https://telegra.ph/file/f12cca6da80aa19031661.jpg"
         response = requests.get(thumb, allow_redirects=True)
         open(f"{playlist[0][5]}.jpeg", 'wb').write(response.content)
         await message.reply_chat_action("upload_document")
@@ -1273,7 +1273,7 @@ async def upload(client, message):
         file=GET_FILE[url]
         thumb=GET_THUMB.get(url)
         if thumb is None:
-            thumb="https://telegra.ph/file/d925c78d84dc4aff53b45.jpg"
+            thumb="https://telegra.ph/file/f12cca6da80aa19031661.jpg"
         response = requests.get(thumb, allow_redirects=True)
         open(f"{playlist[0][5]}.jpeg", 'wb').write(response.content)
         await message.reply_chat_action("upload_document")
@@ -1312,16 +1312,11 @@ allcmd = ["play", "player", "splay", f"splay@{U}", f"play@{U}", f"player@{U}"] +
 async def not_chat(_, m: Message):
     buttons = [
         [
-            InlineKeyboardButton('🔺 Heroku', url='https://youtu.be/FKaAU4Pr2bw'),
-            InlineKeyboardButton('Qovery 🔺', url='https://youtu.be/KC4YdpDGQKg'),
+            InlineKeyboardButton('✨ ꜱᴜᴘᴘᴏʀᴛ ✨', url='https://t.me/DarkPentester'),
         ],
         [
-            InlineKeyboardButton('🆘 Help & Commands 🆘', callback_data='help'),       
-        ],
-        [
-            InlineKeyboardButton('👨‍💻 Developer', url='https://t.me/c/1417456571/580'),
-            InlineKeyboardButton('Channel 📢', url='https://t.me/c/1481808444/131')
+            InlineKeyboardButton('❕ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ ❗️', callback_data='help'),       
         ]
         ]
-    k=await m.reply("<b>You can't use this bot in this group, for that you have to make your own bot from the [Soure Code 👈](https://github.com/ZauteKm/Radio-Music-Bot) below.</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
+    k=await m.reply("<b>You Can't Use This Bot In This Group !</b>", disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))
     await mp.delete(m)
