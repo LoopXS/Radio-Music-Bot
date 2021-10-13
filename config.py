@@ -51,11 +51,11 @@ else:
     finalurl=STREAM
 
 class Config:
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", '1768739981')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", ''))
-    CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    API_ID = int(os.environ.get("API_ID", '3208228'))
+    CHAT = int(os.environ.get("CHAT", "-1001500995042"))
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001500995042")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
@@ -66,7 +66,7 @@ class Config:
     SHUFFLE=bool(os.environ.get("SHUFFLE", True))
     DELETE_HISTORY=bool(os.environ.get("DELETE_HISTORY", True))
     LIMIT=int(os.environ.get("LIMIT", 1500))
-    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "N")
+    ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "Y")
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", None)
     if REPLY_MESSAGE:
         REPLY_MESSAGE=REPLY_MESSAGE
@@ -77,9 +77,9 @@ class Config:
         EDIT_TITLE=None
     DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
     DELAY = int(os.environ.get("DELAY", 10))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_HASH = os.environ.get("API_HASH", "07d1d53a608693a6be436ca387582d8b")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "2043989878:AAE3kabJuFEkhOMV7URXsuV-sCOA_ISZZkw")     
+    SESSION = os.environ.get("SESSION_STRING", "AgA3_O6aM1O5Jsy-kzxxV40SYg9MtQcu_OZ3ui4GVSPHTVyvdPk2PgdXEAXUfTmYIAZiRkl2mrIhjUeybrf-jR9EGVFHw5xwZoZOJx41AEfpQ6n7s1NX1PNsBAUBJnoTUtop7WKiQGyVY3P5M44jas9eBapqPO0Ams9_60djLi1H7F1LES4HVMezPiAT6a4XDCOSJVgTbzKNUTfhjMpoWCRY4x7_xER8_ihHYWF-oSs9tp0ETw4UBrdSsD7MkpcAIm8fMfk4paMkw8T-93Dld0GGhbnRb4eKQAIhlc5u14_GpeoD3iWPT-lqG2f-Jt0XLorr3HNOyn-UTcRV4TL6Ibqxd9_byAA")
     playlist=[]
     msg = {}
     CONV = {}
