@@ -62,7 +62,7 @@ async def start(client, message):
         InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ ✨", url='https://t.me/DarkPentester'),
     ],
     [
-        InlineKeyboardButton('🆘 Help & Commands 🆘', callback_data='help'),
+        InlineKeyboardButton('❕ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ ❗️', callback_data='help'),
 
     ]
     ]
